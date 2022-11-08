@@ -1,6 +1,7 @@
 **********************************           WEEK 3 Programming, Data Structures And Algorithms Using Python                         ********************************** 
-Week 3 Programming Assignment 
-
+Week 3 Programming Assignment    Week 3 Programming Assignment     Week 3 Programming Assignment     Week 3 Programming Assignment     Week 3 Programming Assignment 
+1. Write a function contracting(l) that takes as input a list of integer l and returns True if the absolute difference between each adjacent pair of elements strictly    decreases.
+   Here are some examples of how your function should work.
   >>> contracting([9,2,7,3,1])
   True
   >>> contracting([-2,3,7,2,-1]) 
@@ -9,7 +10,10 @@ Week 3 Programming Assignment
   False
 
 
-1.	In a list of integers l, the neighbours of l[i] are l[i-1] and l[i+1]. l[i] is a hill if it is strictly greater than its neighbours and a valley if it is strictly      less than its neighbours. Write a function counthv(l) that takes as input a list of integers l and returns a list [hc,vc] where hc is the number of hills in l and      vc is the number of valleys in l.
+
+
+
+2.	In a list of integers l, the neighbours of l[i] are l[i-1] and l[i+1]. l[i] is a hill if it is strictly greater than its neighbours and a valley if it is strictly      less than its neighbours. Write a function counthv(l) that takes as input a list of integers l and returns a list [hc,vc] where hc is the number of hills in l and      vc is the number of valleys in l.
       Here are some examples to show how your function should work.
         >>> counthv([1,2,1,2,3,2,1])
         [2, 1]
@@ -21,7 +25,11 @@ Week 3 Programming Assignment
         [0, 1]
 
 
-2.	A square n×n matrix of integers can be written in Python as a list with n elements, where each element is in turn a list of n integers, representing a row of the matrix. For instance, the matrix
+
+
+
+
+3.	A square n×n matrix of integers can be written in Python as a list with n elements, where each element is in turn a list of n integers, representing a row of the matrix. For instance, the matrix
   1  2  3
   4  5  6
   7  8  9
@@ -38,7 +46,17 @@ Here are some examples of how your function should work.
   [[3, 6, 9], [2, 5, 8], [1, 4, 7]]
   >>> leftrotate([[1,1,1],[2,2,2],[3,3,3]])
   [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+
+
+
+
+
+
+
+
+
 Answers:
+
 def contracting(l):
     if len(l) < 3:
         return(True)
