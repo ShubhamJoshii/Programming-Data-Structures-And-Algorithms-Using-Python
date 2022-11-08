@@ -1,0 +1,64 @@
+1. Suppose u and v both have values of type set and are disjoint. Which of the following expressions evaluates to True?
+       a. u == v | (u^v)
+       b. u == (v^u)
+       c. u == v^(u | v)
+       d. u == u^(v | u)
+   
+  Correct Answers:
+        u == v^(u | v)
+
+2. Suppose u and v both denote sets in Python. What is the most general condition that guarantees that u|v == u^v?
+       a. The sets u and v should be disjoint.
+       b. The set u should be a subset of the set v.
+       c. The set v should be a subset of the set u.
+       d. This is true for any u and v.
+   
+   Correct Answers:
+         The sets u and v should be disjoint.
+
+
+
+3. Consider the min-heap [15, 27, 33, 39, 66, 39, 47, 58, 51]. built by repeatedly inserting values into an empty heap. Which of the following could not have been the last element inserted into this heap?
+     a.  27
+     b.  15
+     c.  58
+     d.  51
+   Correct Answers:
+        58
+
+
+4. Suppose we execute delete-min twice on the min-heap [13,29,24,67,52,89,45,98,79,58]. What is the resulting heap?
+        [29,52,45,67,98.79,89,58]
+  
+  
+  
+  Solution: 
+      The original heap is:
+
+                     13
+                  /      \
+              29            24
+            /    \        /    \
+          67      52    89      45
+         /  \    /  
+        98  79  58
+      
+      After one delete-min, we have:
+
+                     24
+                  /      \
+              29            45
+            /    \        /    \
+          67      52    89      58
+         /  \  
+        98  79
+    
+    After the second delete-min, we have:
+
+                     29
+                  /      \
+              52            45
+            /    \        /    \
+          67      79    89      58
+         / 
+        98
